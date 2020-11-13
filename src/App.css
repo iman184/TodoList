@@ -1,0 +1,25 @@
+li{
+    text-decoration: none;
+}
+.back{
+    background-color:#333;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+
+}
+.inputs{
+   padding-left: 239px;
+   padding-top: 3px;
+   padding-bottom: 0px;
+   margin:0;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+    padding-top: 3px;
+    
+}
+ul{
+    margin-top: 0;
+}
