@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 class ListItem extends Component{
+
+    onRemove=()=>{
+        this.props.handleDelete();
+    }
     render(){
         const {item, handleDelete} = this.props;
         return(
@@ -10,7 +14,7 @@ class ListItem extends Component{
                 title="Edit" />
                 <i className="fa fa-trash"
                 title="Delete" 
-                onClick={handleDelete}
+                onClick={this.onRemove}
                 />
                 </div>
                 </li> 
