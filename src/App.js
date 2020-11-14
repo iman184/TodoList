@@ -4,7 +4,7 @@ import Form from './Components/Form'
 import List from './Components/List'
 class App extends Component{
   state = {
-    data:[{todo:"cooking"},{todo:"watching movies"},{todo:"Dev At"}]
+    data:[{todo:"cooking"}]
 };
   handleSubmit = (newVal)  =>{
  this.setState({data:[...this.state.data, newVal]})

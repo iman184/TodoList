@@ -14,6 +14,7 @@ class Form extends Component{
     handleOnSubmit=(e)=>{
         e.preventDefault();
        this.props.onSubmit(this.state);
+       this.setState(this.inputValue);
     }
     render(){
         const {todo} = this.state;
