@@ -15,7 +15,8 @@ render(){
     <div className='app'>
       <Form onSubmit={this.handleSubmit}/>
       <h1>To do list</h1>
-      <List todo={data} />
+      <List todo={data}
+      onDelete={this.handleRemove} />
     </div>
   );
 }

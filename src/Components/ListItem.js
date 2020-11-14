@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 class ListItem extends Component{
     render(){
-        const {item} = this.props;
+        const {item,handleDelete} = this.props;
         return(
             <ul>
             <li>{item}
@@ -9,7 +9,9 @@ class ListItem extends Component{
                 <i className="fa fa-pencil"
                 title="Edit" />
                 <i className="fa fa-trash"
-                title="Delete" />
+                title="Delete" 
+                onClick={handleDelete}
+                />
                 </div>
                 </li> 
             
