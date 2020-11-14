@@ -3,7 +3,8 @@ import ListItem from './ListItem'
 class List extends Component{
     
     render(){
-        const {todo, onDelete} =this.props;
+        const {todo,onDelete} =this.props;
+        
         
         return(
             <ul>
@@ -12,7 +13,7 @@ class List extends Component{
                         return <ListItem 
                         item={item.todo}
                         key={index}
-                        handleDelete={() =>{onDelete(index)}} 
+                        handleDelete={() => {onDelete(index)}} 
                         />
                     })
                 }

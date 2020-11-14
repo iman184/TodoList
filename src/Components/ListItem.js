@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 class ListItem extends Component{
     render(){
-        const {item,handleDelete} = this.props;
+        const {item, handleDelete} = this.props;
         return(
             <ul>
             <li>{item}

@@ -9,6 +9,15 @@ class App extends Component{
   handleSubmit = (newVal)  =>{
  this.setState({data:[...this.state.data, newVal]})
   }
+
+  handleRemove=index=>{
+    const {data}=this.state;
+    this.setState({
+      data:data.filter((item,i)=>{
+        return i !== index
+      })
+    })
+  };
 render(){
   const{data}=this.state;
   return(
@@ -16,7 +25,8 @@ render(){
       <Form onSubmit={this.handleSubmit}/>
       <h1>To do list</h1>
       <List todo={data}
-      onDelete={this.handleRemove} />
+      onDelete={this.handleRemove} 
+      />
     </div>
   );
 }
