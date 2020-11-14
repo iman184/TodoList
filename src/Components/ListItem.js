@@ -4,7 +4,14 @@ class ListItem extends Component{
         const {item} = this.props;
         return(
             <ul>
-            <li>{item}</li> 
+            <li>{item}
+            <div className="row">
+                <i className="fa fa-pencil"
+                title="Edit" />
+                <i className="fa fa-trash"
+                title="Delete" />
+                </div>
+                </li> 
             
           </ul>
         );
