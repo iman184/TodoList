@@ -77,5 +77,15 @@ ul li{
     transform: scale(0.7);
   }
 }
-
+ul li .row{
+  float: right;
+}
+ul li .row i{
+  color: teal;
+  margin-left:15px;
+  cursor:pointer;
+}
+ul li .row i:hover{
+  color: crimson;
+}
 
