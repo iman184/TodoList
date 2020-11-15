@@ -3,7 +3,7 @@ import ListItem from './ListItem'
 class List extends Component{
     
     render(){
-        const {todo,onDelete} =this.props;
+        const {todo,onDelete,onEdit} =this.props;
         
         
         return(
@@ -14,6 +14,8 @@ class List extends Component{
                         item={item.todo}
                         key={index}
                         handleDelete={() => {onDelete(index)}} 
+                        handleEdit={onEdit}
+                        id={index}
                         />
                     })
                 }

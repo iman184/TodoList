@@ -18,6 +18,17 @@ class App extends Component{
       })
     })
   };
+
+  handleOnEdit=(editVal,index) =>{
+    const {data} = this.state;
+    
+    data.forEach((item,i)=>{
+      if(i===index){
+        item.todo =editVal;
+      }
+    })
+    this.setState({data:data})
+  }
 render(){
   const{data}=this.state;
   return(
@@ -26,6 +37,7 @@ render(){
       <h1>To do list</h1>
       <List todo={data}
       onDelete={this.handleRemove} 
+      onEdit={this.handleOnEdit}
       />
     </div>
   );
