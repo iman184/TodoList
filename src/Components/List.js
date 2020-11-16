@@ -3,10 +3,11 @@ import ListItem from './ListItem'
 class List extends Component{
     
     render(){
-        const {todo,onDelete,onEdit} =this.props;
+        const {todo,onDelete,onEdit,count} =this.props;
         
         
         return(
+            <>
             <ul>
                 {
                     todo.map((item, index)=>{
@@ -21,6 +22,8 @@ class List extends Component{
                 }
             
           </ul>
+          <h2>You have {count} things to do</h2>
+          </>
         );
     }
 }

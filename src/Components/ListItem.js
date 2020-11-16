@@ -23,8 +23,12 @@ myRef=React.createRef();
         this.setState({onEdit:true})
     }
     handleCancel=()=>{
-        this.setState({onEdit:false})
-    }
+        const{editVal} = this.state;
+        if(editVal === ''){
+            this.setState({editVal:this.props.item});
+        }
+        this.setState({onEdit:false});
+    };
     handleSave=()=>{
         const{editVal} = this.state;
         if(editVal === ''){
